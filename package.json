@@ -1,0 +1,20 @@
+{
+  "name": "universal-simple-css",
+  "version": "0.0.1",
+  "description": "Universal and simple CSS",
+  "main": "uas.css",
+  "scripts": {
+    "build": "scss uas.scss uas.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/universal-and-simple-css.git"
+  },
+  "keywords": ["css", "simple", "universal"],
+  "author": "allnulled",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/allnulled/universal-and-simple-css/issues"
+  },
+  "homepage": "https://github.com/allnulled/universal-and-simple-css#readme"
+}

@@ -2,29 +2,344 @@
 
 **Universal and simple CSS.**
 
-## Why?
+## What is new with this one?
 
-To not having to remember things.
+Okay.
 
-## How?
+- In general, all the classes are labeled just like the CSS rule they apply.
+  - This makes them easierly remembered.
+- It includes the [normalize.css script](#) already.
+- It includes the [Roboto font](#) already, with **bold** and *italic/oblique*.
+- It includes a very intuitive and simple grid system for responsiveness.
+- You can modify variables and regenerate it by `npm run build`.
 
-Mapping directly classes to the rules.
+## Specifications
 
-## What?
+By groups of styles:
 
-Yes.
+- variables for separation
+- variables for border
+- variables for border-radius
+- variables for fonts
+- external scripts
+- external fonts
+- fonts
+- padding & margin by standard
+- padding & margin by pixel
+- cursor
+- display
+- width
+- height
+- overflow
+- position
+- text-align
+- vertical-align
+- word-wrap
+- word-break
+- visibility
+- resize
+- box-sizing
+- border
+- border-radius
+- grid system
 
-Instead of random abbreviations, this is to use simple CSS classes that refer directly to the rules it applies.
+By classes:
 
-The result of using this instead of [Bootstrap](#) or [Materialize](#) or others is that your HTML code stands *superverbose*.
+- .font-family-main
+- .padding-top-0
+- .padding-bottom-0
+- .padding-left-0
+- .padding-right-0
+- .padding-top-1
+- .padding-bottom-1
+- .padding-left-1
+- .padding-right-1
+- .padding-top-2
+- .padding-bottom-2
+- .padding-left-2
+- .padding-right-2
+- .padding-top-3
+- .padding-bottom-3
+- .padding-left-3
+- .padding-right-3
+- .padding-top-4
+- .padding-bottom-4
+- .padding-left-4
+- .padding-right-4
+- .margin-top-0
+- .margin-bottom-0
+- .margin-left-0
+- .margin-right-0
+- .margin-top-1
+- .margin-bottom-1
+- .margin-left-1
+- .margin-right-1
+- .margin-top-2
+- .margin-bottom-2
+- .margin-left-2
+- .margin-right-2
+- .margin-top-3
+- .margin-bottom-3
+- .margin-left-3
+- .margin-right-3
+- .margin-top-4
+- .margin-bottom-4
+- .margin-left-4
+- .margin-right-4
+- .margin-top-5
+- .margin-bottom-5
+- .margin-left-5
+- .margin-right-5
+- .padding-top-1px
+- .padding-bottom-1px
+- .padding-left-1px
+- .padding-right-1px
+- .margin-top-1px
+- .margin-bottom-1px
+- .margin-left-1px
+- .margin-right-1px
+- .cursor-alias
+- .cursor-all-scroll
+- .cursor-auto
+- .cursor-cell
+- .cursor-context-menu
+- .cursor-col-resize
+- .cursor-copy
+- .cursor-crosshair
+- .cursor-default
+- .cursor-e-resize
+- .cursor-ew-resize
+- .cursor-grab
+- .cursor-grabbing
+- .cursor-help
+- .cursor-move
+- .cursor-n-resize
+- .cursor-ne-resize
+- .cursor-nesw-resize
+- .cursor-ns-resize
+- .cursor-nw-resize
+- .cursor-nwse-resize
+- .cursor-no-drop
+- .cursor-none
+- .cursor-not-allowed
+- .cursor-pointer
+- .cursor-progress
+- .cursor-row-resize
+- .cursor-s-resize
+- .cursor-se-resize
+- .cursor-sw-resize
+- .cursor-text
+- .cursor-w-resize
+- .cursor-wait
+- .cursor-zoom-in
+- .cursor-zoom-out
+- .display-inline
+- .display-block
+- .display-contents
+- .display-flex
+- .display-grid
+- .display-inline-block
+- .display-inline-flex
+- .display-inline-grid
+- .display-inline-table
+- .display-list-item
+- .display-run-in
+- .display-table
+- .display-table-caption
+- .display-table-column-group
+- .display-table-header-group
+- .display-table-footer-group
+- .display-table-row-group
+- .display-table-cell
+- .display-table-column
+- .display-table-row
+- .display-none
+- .display-initial
+- .display-inherit
+- .width-0
+- .width-0-percent
+- .width-1-percent
+- .width-50-percent
+- .width-100-percent
+- .height-0
+- .height-0-percent
+- .height-1-percent
+- .height-50-percent
+- .height-100-percent
+- .overflow-visible
+- .overflow-hidden
+- .overflow-scroll
+- .overflow-auto
+- .overflow-initial
+- .overflow-inherit
+- .overflow-x-visible
+- .overflow-x-hidden
+- .overflow-x-scroll
+- .overflow-x-auto
+- .overflow-x-initial
+- .overflow-x-inherit
+- .overflow-y-visible
+- .overflow-y-hidden
+- .overflow-y-scroll
+- .overflow-y-auto
+- .overflow-y-initial
+- .overflow-y-inherit
+- .position-static
+- .position-absolute
+- .position-fixed
+- .position-relative
+- .position-sticky
+- .position-initial
+- .position-inherit
+- .text-align-left
+- .text-align-right
+- .text-align-center
+- .text-align-justify
+- .text-align-initial
+- .text-align-inherit
+- .vertical-align-baseline
+- .vertical-align-length
+- .vertical-align-sub
+- .vertical-align-super
+- .vertical-align-top
+- .vertical-align-text-top
+- .vertical-align-middle
+- .vertical-align-bottom
+- .vertical-align-text-bottom
+- .vertical-align-initial
+- .vertical-align-inherit
+- .word-wrap-normal
+- .word-wrap-wrap-word
+- .word-wrap-initial
+- .word-wrap-inherit
+- .word-break-normal
+- .word-break-break-all
+- .word-break-keep-all
+- .word-break-break-word
+- .word-break-initial
+- .word-break-inherit
+- .visibility-visible
+- .visibility-hidden
+- .visibility-collapse
+- .visibility-initial
+- .visibility-inherit
+- .resize-none
+- .resize-both
+- .resize-horizontal
+- .resize-vertical
+- .resize-initial
+- .resize-inherit
+- .box-sizing-content-box
+- .box-sizing-border-box
+- .box-sizing-initial
+- .box-sizing-inherit
+- .border-style-0
+- .border-top-style-0
+- .border-bottom-style-0
+- .border-left-style-0
+- .border-right-style-0
+- .border-style-1
+- .border-top-style-1
+- .border-bottom-style-1
+- .border-left-style-1
+- .border-right-style-1
+- .border-style-2
+- .border-top-style-2
+- .border-bottom-style-2
+- .border-left-style-2
+- .border-right-style-2
+- .border-radius-style-0
+- .border-top-radius-style-0
+- .border-top-left-radius-style-0
+- .border-top-right-radius-style-0
+- .border-bottom-radius-style-0
+- .border-bottom-left-radius-style-0
+- .border-bottom-right-radius-style-0
+- .border-radius-style-1
+- .border-top-radius-style-1
+- .border-top-left-radius-style-1
+- .border-top-right-radius-style-1
+- .border-bottom-radius-style-1
+- .border-bottom-left-radius-style-1
+- .border-bottom-right-radius-style-1
+- .border-radius-style-2
+- .border-top-radius-style-2
+- .border-top-left-radius-style-2
+- .border-top-right-radius-style-2
+- .border-bottom-radius-style-2
+- .border-bottom-left-radius-style-2
+- .border-bottom-right-radius-style-2
+- .border-radius-style-rounded
+- .border-top-radius-style-rounded
+- .border-top-left-radius-style-rounded
+- .border-top-right-radius-style-rounded
+- .border-bottom-radius-style-rounded
+- .border-bottom-left-radius-style-rounded
+- .border-bottom-right-radius-style-rounded
+- .columns
+- .column-width-1-of-12
+- .column-width-2-of-12
+- .column-width-3-of-12
+- .column-width-4-of-12
+- .column-width-5-of-12
+- .column-width-6-of-12
+- .column-width-7-of-12
+- .column-width-8-of-12
+- .column-width-9-of-12
+- .column-width-10-of-12
+- .column-width-11-of-12
+- .column-width-12-of-12
+- .column-width-1-of-12-in-xs
+- .column-width-2-of-12-in-xs
+- .column-width-3-of-12-in-xs
+- .column-width-4-of-12-in-xs
+- .column-width-5-of-12-in-xs
+- .column-width-6-of-12-in-xs
+- .column-width-7-of-12-in-xs
+- .column-width-8-of-12-in-xs
+- .column-width-9-of-12-in-xs
+- .column-width-10-of-12-in-xs
+- .column-width-11-of-12-in-xs
+- .column-width-12-of-12-in-xs
+- .column-width-1-of-12-in-sm
+- .column-width-2-of-12-in-sm
+- .column-width-3-of-12-in-sm
+- .column-width-4-of-12-in-sm
+- .column-width-5-of-12-in-sm
+- .column-width-6-of-12-in-sm
+- .column-width-7-of-12-in-sm
+- .column-width-8-of-12-in-sm
+- .column-width-9-of-12-in-sm
+- .column-width-10-of-12-in-sm
+- .column-width-11-of-12-in-sm
+- .column-width-12-of-12-in-sm
+- .column-width-1-of-12-in-md
+- .column-width-2-of-12-in-md
+- .column-width-3-of-12-in-md
+- .column-width-4-of-12-in-md
+- .column-width-5-of-12-in-md
+- .column-width-6-of-12-in-md
+- .column-width-7-of-12-in-md
+- .column-width-8-of-12-in-md
+- .column-width-9-of-12-in-md
+- .column-width-10-of-12-in-md
+- .column-width-11-of-12-in-md
+- .column-width-12-of-12-in-md
+- .column-width-1-of-12-in-lg
+- .column-width-2-of-12-in-lg
+- .column-width-3-of-12-in-lg
+- .column-width-4-of-12-in-lg
+- .column-width-5-of-12-in-lg
+- .column-width-6-of-12-in-lg
+- .column-width-7-of-12-in-lg
+- .column-width-8-of-12-in-lg
+- .column-width-9-of-12-in-lg
+- .column-width-10-of-12-in-lg
+- .column-width-11-of-12-in-lg
+- .column-width-12-of-12-in-lg
+- .separation
 
-## So?
-
-Add it to your project and start coding.
-
-## Ehm...
-
-I am not going to put the list. Go to the script and check it out if you want.
+They are quiet intuitive, my opinion. And that is why I did it.
 
 ## License
 
