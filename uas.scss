@@ -288,31 +288,31 @@ $font-family-main: "Roboto";
 
 // BORDER-RADIUS
 .border-radius-style-0 {border-radius: $border-radius-style-0;}
-.border-top-radius-style-0 {border-top-radius: $border-radius-style-0;}
+.border-top-radius-style-0 {border-top-left-radius: $border-radius-style-0;border-top-right-radius: $border-radius-style-0;}
 .border-top-left-radius-style-0 {border-top-left-radius: $border-radius-style-0;}
 .border-top-right-radius-style-0 {border-top-right-radius: $border-radius-style-0;}
-.border-bottom-radius-style-0 {border-bottom-radius: $border-radius-style-0;}
+.border-bottom-radius-style-0 {border-bottom-left-radius: $border-radius-style-0;border-bottom-right-radius: $border-radius-style-0;}
 .border-bottom-left-radius-style-0 {border-bottom-left-radius: $border-radius-style-0;}
 .border-bottom-right-radius-style-0 {border-bottom-right-radius: $border-radius-style-0;}
 .border-radius-style-1 {border-radius: $border-radius-style-1;}
-.border-top-radius-style-1 {border-top-radius: $border-radius-style-1;}
+.border-top-radius-style-1 {border-top-left-radius: $border-radius-style-1;border-top-right-radius: $border-radius-style-1;}
 .border-top-left-radius-style-1 {border-top-left-radius: $border-radius-style-1;}
 .border-top-right-radius-style-1 {border-top-right-radius: $border-radius-style-1;}
-.border-bottom-radius-style-1 {border-bottom-radius: $border-radius-style-1;}
+.border-bottom-radius-style-1 {border-bottom-left-radius: $border-radius-style-1;border-bottom-right-radius: $border-radius-style-1;}
 .border-bottom-left-radius-style-1 {border-bottom-left-radius: $border-radius-style-1;}
 .border-bottom-right-radius-style-1 {border-bottom-right-radius: $border-radius-style-1;}
 .border-radius-style-2 {border-radius: $border-radius-style-2;}
-.border-top-radius-style-2 {border-top-radius: $border-radius-style-2;}
+.border-top-radius-style-2 {border-top-left-radius: $border-radius-style-2;border-top-right-radius: $border-radius-style-2;}
 .border-top-left-radius-style-2 {border-top-left-radius: $border-radius-style-2;}
 .border-top-right-radius-style-2 {border-top-right-radius: $border-radius-style-2;}
-.border-bottom-radius-style-2 {border-bottom-radius: $border-radius-style-2;}
+.border-bottom-radius-style-2 {border-bottom-left-radius: $border-radius-style-2;border-bottom-right-radius: $border-radius-style-2;}
 .border-bottom-left-radius-style-2 {border-bottom-left-radius: $border-radius-style-2;}
 .border-bottom-right-radius-style-2 {border-bottom-right-radius: $border-radius-style-2;}
 .border-radius-style-rounded {border-radius: $border-radius-style-rounded;}
-.border-top-radius-style-rounded {border-top-radius: $border-radius-style-rounded;}
+.border-top-radius-style-rounded {border-top-left-radius: $border-radius-style-rounded;border-top-right-radius: $border-radius-style-rounded;}
 .border-top-left-radius-style-rounded {border-top-left-radius: $border-radius-style-rounded;}
 .border-top-right-radius-style-rounded {border-top-right-radius: $border-radius-style-rounded;}
-.border-bottom-radius-style-rounded {border-bottom-radius: $border-radius-style-rounded;}
+.border-bottom-radius-style-rounded {border-bottom-left-radius: $border-radius-style-rounded;border-bottom-right-radius: $border-radius-style-rounded;}
 .border-bottom-left-radius-style-rounded {border-bottom-left-radius: $border-radius-style-rounded;}
 .border-bottom-right-radius-style-rounded {border-bottom-right-radius: $border-radius-style-rounded;}
 
@@ -322,3 +322,9 @@ $font-family-main: "Roboto";
 .column-group > .column- {display: inline-block;}
 
 @import "./lib/grid-system.scss";
+
+// FLOAT & CLEAR
+.float-left {float: left;}
+.float-right {float: right;}
+.float-none {float: none;}
+.clear-both {clear: both}

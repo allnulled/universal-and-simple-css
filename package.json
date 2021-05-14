@@ -4,17 +4,24 @@
   "description": "Universal and simple CSS",
   "main": "uas.css",
   "scripts": {
-    "build": "scss uas.scss uas.css"
+    "build": "node test.build.js && scss uas.scss uas.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/allnulled/universal-and-simple-css.git"
   },
-  "keywords": ["css", "simple", "universal"],
+  "keywords": [
+    "css",
+    "simple",
+    "universal"
+  ],
   "author": "allnulled",
   "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/allnulled/universal-and-simple-css/issues"
   },
-  "homepage": "https://github.com/allnulled/universal-and-simple-css#readme"
+  "homepage": "https://github.com/allnulled/universal-and-simple-css#readme",
+  "devDependencies": {
+    "ejs": "^3.1.6"
+  }
 }

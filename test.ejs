@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test</title>
+        <link rel="stylesheet" href="./uas.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Test</h1>
+		</header>
+        <div>
+<%
+for (let i=1; i<=12; i++) { 
+    let parts = Math.floor(12 / i);
+%>
+            <div class="display-block width-100-percent clear-both">
+                <div class="display-block"><%-i%> of 12:</div>
+                <div class="columns">
+<%
+    for(let ii = 1; ii <= parts; ii++) {
+%>
+                    <div class="column-width-<%-i%>-of-12">
+                        <div class="border-style-1">
+                            <%-ii%>: <%-i%> of 12
+                        </div>
+                    </div>
+<%
+    }
+%>
+                </div>
+            </div>
+<%
+}
+%>
+		</div>
+		<footer>
+			<a href="https://github.com/allnulled/universal-and-simple-css"></a>
+		</footer>
+	</body>
+</html>
